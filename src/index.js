@@ -1,1 +1,4 @@
-console.log("working correctly")
+import {initialPage} from "./initial-page-load"
+
+initialPage();
+
