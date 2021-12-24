@@ -17,10 +17,18 @@ var initialPage = () => {
   for (var i = 0; i < 3; i++) {
     const content = document.createElement('li');
     list.appendChild(content);
+    if(i === 0) {
+      content.textContent = "Home"
+      content.id = "home"
+    } else if(i === 1) {
+      content.textContent = "Menu"
+      content.id = "menu"
+    } else if(i === 2) {
+      content.textContent = "Contact"
+      content.id = "contact"
+    }
   }
-  list.getElementsByTagName('li')[0].innerHTML = "Home"
-  list.getElementsByTagName('li')[1].innerHTML = "Menu"
-  list.getElementsByTagName('li')[2].innerHTML = "Contact"
+
 
   const image = document.createElement('img')
   image.src = "/src/index-removebg-preview.png"
@@ -29,7 +37,9 @@ var initialPage = () => {
   // Main Section creation
   const mainSection = document.createElement("div");
   mainSection.classList.add("mainSection");
+  mainSection.id = "mainSection"
   body.appendChild(mainSection);
+  
   // Banner creation
   const banner = document.createElement("img");
   banner.src = "/src/banner.png"
@@ -37,14 +47,15 @@ var initialPage = () => {
   // Content creation
   const title = document.createElement("h1");
   title.textContent = "BoardGameGeek Coffee Shop";
+
   const paragraph = document.createElement("p");
   paragraph.textContent = "Established in 2010, Snakes & Lattes provides a FUN experience. We offer our Guests beautiful spaces, and an unique Hospitality Experience centered around our passion: Board Games!"
+
   const openCloseHours = document.createElement("ol");
   for (var i = 0; i < 7; i++) {
     const content = document.createElement('li');
-    content.textContent = "8am - 10pm"
     openCloseHours.appendChild(content);
-    
+    i === 0 || i === 6?content.textContent = "8am - 10pm":content.textContent = "6am - 6pm";  
   }
   mainSection.appendChild(title);
   mainSection.appendChild(paragraph);
