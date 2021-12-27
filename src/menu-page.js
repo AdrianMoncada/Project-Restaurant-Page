@@ -21,8 +21,11 @@ for(let i = 0; i < 7; i++) {
     itemTitle.textContent = "Random Meal"
   }
   menuItem.appendChild(itemTitle)
+
+  
   
 }
+return;
 }
 
 

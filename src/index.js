@@ -6,16 +6,17 @@ initialPage();
 
   // On click functions
   const menu = document.querySelector("#menu")
-  const main = document.querySelector('#mainSection')
-  menu.onclick = () => {
-    body.removeChild(main);
-    menuPage();
-  }
   
+  menu.addEventListener('click', () => {
+    const main = document.querySelector('#mainSection')
+    main.remove();
+    menuPage();
+  });
 
   const contact = document.querySelector("#contact")
-  contact.onclick = () => {
-    body.removeChild(main);
-    contactPage();
-  }
 
+  contact.addEventListener('click', () => {
+    const main = document.querySelector('#mainSection')
+    main.remove();
+    contactPage();
+  });

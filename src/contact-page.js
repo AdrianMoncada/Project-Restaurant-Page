@@ -8,8 +8,14 @@ var contactPage = () => {
   
   // Content creation
   const title = document.createElement("h1");
-  title.textContent = "contact";
+  title.textContent = "Contact";
   mainSection.appendChild(title);
+
+  const contactDetail = document.createElement("p");
+  title.textContent = "Chef - 555-555-5554 - totallyRealEmail@notFake.com";
+  mainSection.appendChild(contactDetail);
+
+  return;
   }
   
   
