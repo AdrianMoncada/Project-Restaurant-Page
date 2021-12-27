@@ -47,7 +47,7 @@ var homePage = () => {
     
     // Banner creation
     const banner = document.createElement("img");
-    banner.src = "/src/banner.png"
+    banner.src = "/src/banner.jpg"
     mainSection.appendChild(banner)
     // Content creation
     const title = document.createElement("h1");

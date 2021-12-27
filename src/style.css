@@ -3,6 +3,8 @@
   padding: 0;
   margin: 0;
 }
+
+/* HEADER */
 .navbar {
   background-color: #3F3A60;
   display: flex;
@@ -26,3 +28,19 @@
   color: white;
   font-size: 20px;
 }
+
+/* MAIN */
+
+.mainSection {
+  background-color: #E5E5E5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+
+.mainSection img{
+  width: 50%;
+}
+
