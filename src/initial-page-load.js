@@ -32,10 +32,6 @@ var initialPage = () => {
       content.id = "contact"
     }
   }
-
-
-
-
 }
 
 var homePage = () => {
@@ -67,8 +63,40 @@ var homePage = () => {
     mainSection.appendChild(openCloseHours);
 }
 
+var footer = () => {
+
+  // Footer creation
+  const footer = document.querySelector('#footer');
+  const body = document.querySelector("#body");
+
+  // Div creation
+  const footerDiv = document.createElement('div');
+  footerDiv.classList.add('footer');
+  footer.appendChild(footerDiv);
+
+  const list = document.createElement("ol");
+  list.classList.add("navList");
+  footer.appendChild(list);
+
+  for (var i = 0; i < 3; i++) {
+    const content = document.createElement('li');
+    list.appendChild(content);
+    if(i === 0) {
+      content.textContent = "Home"
+      content.id = "home"
+    } else if(i === 1) {
+      content.textContent = "Menu"
+      content.id = "menu"
+    } else if(i === 2) {
+      content.textContent = "Contact"
+      content.id = "contact"
+    }
+  }
+}
+
 export {
   initialPage,
-  homePage
+  homePage,
+  footer
 };
 

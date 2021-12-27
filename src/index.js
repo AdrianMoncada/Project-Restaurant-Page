@@ -1,10 +1,11 @@
-import {initialPage, homePage} from "./initial-page-load"
+import {initialPage, homePage, footer} from "./initial-page-load"
 import {menuPage} from "./menu-page"
 import {contactPage} from "./contact-page"
 import './style.css';
 
 initialPage();
 homePage();
+footer();
 
   // On click functions
   const menu = document.querySelector("#menu")
