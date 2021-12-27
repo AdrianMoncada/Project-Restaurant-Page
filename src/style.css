@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  background-color: #3F3A60;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar ol {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.navbar img{
+  width: 5%;
+}
+
+.navbar ol li{
+  color: white;
+  font-size: 20px;
+}
